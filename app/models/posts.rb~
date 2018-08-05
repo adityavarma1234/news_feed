@@ -1,0 +1,7 @@
+class Posts < ApplicationRecord
+
+  enum status: { active: 0, archived: 1 }
+  has_many :comments, dependent: :destroy
+  has_many :upvotes, dependent: :destroy
+
+end
