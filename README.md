@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+News feed api page query is required. 
+* /api/v1/news_feed?page=1
+* per_page only 50 posts are rendered.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Relation ships
+* User has many posts and comments
+* Post belongs to user and has many comments
+* Comment belongs to user and belongs to post
