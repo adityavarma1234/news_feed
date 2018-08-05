@@ -1,5 +1,5 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes  :type, :content
+  attributes :type, :content
 
   has_one :user
 
